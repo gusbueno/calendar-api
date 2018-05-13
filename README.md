@@ -1,24 +1,18 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+# Calendar API
 
 * Ruby version 2.5.1
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
 * Rails version 5.2.0
+
+## HOW TO
+
+#### With docker
+
+* Run `docker build -t calendar-api .`
+* Run `docker run -p 3000:3000 -i -t calendar-api`
+* Running on [localhost:3000](http://localhost:3000)
+
+#### Manually
+
+* Run `bundle install` to install all dependencies
+* Run `rails server` to launch server on port 3000
+* Running on [localhost:3000](http://localhost:3000)
