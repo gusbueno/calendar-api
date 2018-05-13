@@ -11,4 +11,14 @@ class EventsController < ApplicationController
     @event = Event.create({:title => @title, :description => @description, :ts => @ts})
     render json:{event: @event }
   end
+
+  def destroy
+    @id = params[:id]
+    @record = Event.find(@id)
+    if @record.destroy
+      head :no_content
+    else
+      render json:{error: 'unexpected_error'}
+    end
+  end
 end

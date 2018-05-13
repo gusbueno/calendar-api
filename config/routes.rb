@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   get '/api/events', to: 'events#show'
   post '/api/event', to: 'events#create'
+  delete '/api/event/:id', to: 'events#destroy'
 end
