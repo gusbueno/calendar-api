@@ -1,5 +1,5 @@
 FROM ruby:2.5.1
-EXPOSE 8081
+EXPOSE 8080
 
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
 WORKDIR /calendar-api
@@ -12,4 +12,4 @@ RUN bundle install \
 
 COPY . /calendar-api
 
-CMD [ "rails", "server", "-p 8081" ]
+CMD [ "rails", "server" ]
