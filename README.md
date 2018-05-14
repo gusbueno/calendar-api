@@ -18,7 +18,7 @@
 * Run `rails server` to launch server on port 3000
 * Running on [localhost:3000](http://localhost:3000)
 
-# ENDPOINTS
+## ENDPOINTS
 
 * GET `/api/events`
 * POST `/api/event` with params `title:string, description:string, ts:integer`
