@@ -15,8 +15,8 @@
 
 * Run `bundle install` to install all dependencies
 * Run `rails db:migrate RAILS_ENV=development`
-* Run `rails server` to launch server on port 3000
-* Running on [localhost:3000](http://localhost:3000)
+* Run `rails server -p 8080` to launch server on port 8080
+* Running on [localhost:8080](http://localhost:8080)
 
 ## ENDPOINTS
 
